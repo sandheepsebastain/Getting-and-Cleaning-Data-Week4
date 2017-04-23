@@ -67,4 +67,4 @@ dfAvgTidy<-dfAvgTidy %>%
               summarise_each(funs(mean))
 
 
-dfAvgTidy
+write.table(dfAvgTidy,"tidydataset.txt",row.names=FALSE)
